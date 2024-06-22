@@ -37,7 +37,7 @@ nav {
     align-items: center;
     font-size: 1.2rem;
     margin-top: 1.5rem;
-    position: relative; /* Add position relative for the burger menu positioning */
+    position: relative;
 }
 
 ul {
@@ -145,22 +145,21 @@ ul, a {
 @media (max-width: 500px) {
     nav {
         font-size: 1rem;
-        flex-direction: column; 
         text-align: center; 
     }
 
     .burger-menu {
-        display: flex; /* Show burger menu */
+        display: flex;
     }
 
     ul {
         margin-top: 1rem; 
-        display: none; /* Hide navigation links by default */
-        flex-direction: column; 
+        display: none;
         align-items: center; 
     }
 
     li {
+        display: block;
         margin: 1rem 0;
     }
 
