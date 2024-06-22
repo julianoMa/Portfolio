@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Juliano Martins Portfolio" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:description" content="Mon portfolio">
+
+    <link rel="stylesheet" href="src/css/index.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <title>Juliano Martins</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Mes réalisations</a></li>
+                <li><a href="#">Mes compétences</a></li>
+                <li><a href="#">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Juliano Martins</h1>
+                <span id="type"></span>
+            </div>
+            <div class="selfie-container">
+                <img src="src/img/selfie.png" alt="Selfie" class="selfie">
+            </div>
+            <div class="accroche">
+                Hacking the system,<br>one line at a time.
+            </div>
+        </div>
+    </main>     
+    <script>
+        var typed = new Typed('#type', {
+          strings: ['Je suis un développeur web.', 'Je suis un lycéen.', 'Je suis passionné par le code et la cybersécurité.'],
+          typeSpeed: 60,
+          loop: true,
+          loopCount: Infinity,
+          showCursor: false,
+          smartBackspace: true,
+        });
+    </script>
+</body>
+</html>

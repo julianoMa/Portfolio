@@ -1,0 +1,118 @@
+/* ========== FONTS ========== */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hacked';
+    src: url('../fonts/Hacked-KerX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Firacode';
+    src: url('../fonts/FiraCodeNerdFontPropo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ========== GENERAL ========== */
+
+html {
+    background-image: url(../img/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ========== HEADER ========== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2rem;
+
+    margin-top: 1.5rem;
+}
+
+ul {
+    font-family: 'Raleway';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 2rem;
+}
+
+ul, a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ========== MAIN ========== */
+
+.hero-section {
+    color: white;
+    font-family: 'Hacked';
+    font-size: 2.5rem;
+    margin-top: 10%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    position: relative; 
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+.hero-section h1 {
+    margin-bottom: 0.5rem; 
+    line-height: 1.2;
+}
+
+#type {
+    color: white;
+    font-family: 'Firacode';
+    font-size: 1.15rem;
+}
+
+.selfie-container {
+    position: absolute; 
+    top: 0;
+    right: 39%; 
+}
+
+.selfie {
+    border-radius: 80%;
+    width: 450px; 
+    height: auto; 
+}
+
+.accroche {
+    color: white;
+    font-family: 'Hacked';
+    font-size: 4.5rem;
+    opacity: 40%;
+    margin-top: 3%;
+    margin-left: 2%; 
+    max-width: 60%; 
+    text-align: left;
+    transition: font-size 0.75s ease, opacity 0.75s ease, color 0.75s ease;
+}
+
+.accroche:hover {
+    font-size: 5.25rem;
+    opacity: 100%;
+}
