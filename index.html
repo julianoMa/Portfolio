@@ -16,7 +16,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
                 <li><a href="#" class="active">Accueil</a></li>
                 <li><a href="#">Mes réalisations</a></li>
                 <li><a href="#">Mes compétences</a></li>
@@ -46,6 +51,15 @@
           loopCount: Infinity,
           showCursor: false,
           smartBackspace: true,
+        });
+
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
         });
     </script>
 </body>

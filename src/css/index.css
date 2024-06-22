@@ -35,10 +35,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 1.2rem;
-
     margin-top: 1.5rem;
+    position: relative; /* Add position relative for the burger menu positioning */
 }
 
 ul {
@@ -61,6 +60,25 @@ ul, a {
 .active {
     text-decoration: underline;
     text-decoration-thickness: 2px;
+}
+
+/* Burger menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.burger-menu span {
+    background: white;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
 }
 
 /* ========== MAIN ========== */
@@ -122,6 +140,8 @@ ul, a {
     opacity: 100%;
 }
 
+/* ========== MEDIA QUERIES ========== */
+
 @media (max-width: 500px) {
     nav {
         font-size: 1rem;
@@ -129,10 +149,15 @@ ul, a {
         text-align: center; 
     }
 
+    .burger-menu {
+        display: flex; /* Show burger menu */
+    }
+
     ul {
         margin-top: 1rem; 
-        display: block;
-        text-align: center;
+        display: none; /* Hide navigation links by default */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     li {
@@ -140,15 +165,21 @@ ul, a {
     }
 
     .hero-section {
+        font-size: 2rem;
         margin-top: 10%; 
         flex-direction: column;
         padding-top: 13rem;
         text-align: center;
     }
 
+    .hero-section h1 {
+        margin-top: 4rem; 
+        line-height: 1.2;
+    }
+
     .selfie {
         border-radius: 50%;
-        width: 250px; 
+        width: 250px;
         height: auto;
         margin: 0 auto; 
     }
