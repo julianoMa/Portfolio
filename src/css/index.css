@@ -20,6 +20,19 @@
     font-style: normal;
 }
 
+/* ==================== ANIMATIONS ==================== */
+
+@keyframes accroche-animation-tel {
+    0%, 100% {
+        font-size: 1.75rem; 
+        opacity: 40%;
+    }
+    50% {
+        font-size: 2rem;
+        opacity: 100%;
+    }
+}
+
 /* ==================== GENERAL ==================== */
 
 html {
@@ -137,16 +150,11 @@ nav ul {
         margin-top: 2rem;
         text-align: center;
 
-        transition: font-size 0.75s ease, opacity 0.75s ease, color 0.75s ease;
+        animation: accroche-animation-tel 8s infinite;
     }
 
     .accroche a {
         color: white;
         text-decoration: none;
-    }
-
-    .accroche:hover {
-        font-size: 2rem;
-        opacity: 100%;
     }
 }
