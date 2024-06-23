@@ -33,6 +33,17 @@
     }
 }
 
+@keyframes accroche-animation-tablet {
+    0%, 100% {
+        font-size: 2.5rem; 
+        opacity: 40%;
+    }
+    50% {
+        font-size: 3rem;
+        opacity: 100%;
+    }
+}
+
 /* ==================== GENERAL ==================== */
 
 html {
@@ -42,6 +53,10 @@ html {
     background-attachment: fixed;
 
     color: white;
+}
+
+li {
+    padding: 2rem;
 }
 
 li a {
@@ -57,6 +72,9 @@ li a {
 
 nav ul {
     list-style-type: none;
+    display: flex;
+
+    justify-content: center;
 }
 
 .buttons-container {
@@ -156,5 +174,240 @@ nav ul {
     .accroche a {
         color: white;
         text-decoration: none;
+    }
+}
+
+/* ==================== TABLET ==================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        margin-bottom: 1rem; 
+    }
+
+    .hero-text #type {
+        font-size: 1.25rem; 
+    }
+
+    .selfie-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 1rem;
+        position: static;
+        transform: none;
+    }
+
+    .selfie {
+        width: 300px;
+        height: auto;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem; 
+
+        font-size: 1.25rem;
+    }
+
+    .accroche {
+        margin-top: 2rem;
+        text-align: center;
+
+        animation: accroche-animation-tablet 8s infinite;
+    }
+
+    .accroche a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+/* ==================== LAPTOP ==================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .buttons-container {
+        display: none;
+    }
+    
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        margin-bottom: 1rem; 
+    }
+
+    .hero-text #type {
+        font-size: 1.25rem; 
+    }
+
+    .selfie-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 1rem;
+        position: static;
+        transform: none;
+    }
+
+    .selfie {
+        width: 300px;
+        height: auto;
+    }
+
+    .accroche {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 3rem;
+
+        transition: font-size 0.75s ease, opacity 0.75s ease, color 0.75s ease;
+    }
+
+    .accroche a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .accroche:hover {
+        font-size: 3.5rem;
+        opacity: 100%;
+    }
+}
+
+/* ==================== DESKTOP ==================== */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .buttons-container {
+        display: none;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        margin-bottom: 1rem; 
+    }
+
+    .hero-text #type {
+        font-size: 1.25rem; 
+    }
+
+    .selfie-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 1rem;
+        position: static;
+        transform: none;
+    }
+
+    .selfie {
+        width: 300px;
+        height: auto;
+    }
+
+    .accroche {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 4rem;
+
+        transition: font-size 0.75s ease, opacity 0.75s ease, color 0.75s ease;
+    }
+
+    .accroche a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .accroche:hover {
+        font-size: 4.5rem;
+        opacity: 100%;
+    }
+}
+
+/* ==================== WIDESCREEN ==================== */
+
+@media (min-width: 1201px) {
+    .buttons-container {
+        display: none;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        margin-bottom: 1rem; 
+    }
+
+    .hero-text #type {
+        font-size: 1.25rem; 
+    }
+
+    .selfie-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 1rem;
+        position: static;
+        transform: none;
+    }
+
+    .selfie {
+        width: 350px;
+        height: auto;
+    }
+
+    .accroche {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 4rem;
+
+        transition: font-size 0.75s ease, opacity 0.75s ease, color 0.75s ease;
+    }
+
+    .accroche a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .accroche:hover {
+        font-size: 4.5rem;
+        opacity: 100%;
     }
 }
