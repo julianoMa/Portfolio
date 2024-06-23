@@ -44,6 +44,17 @@
     }
 }
 
+@keyframes accroche-animation-laptop {
+    0%, 100% {
+        font-size: 3rem; 
+        opacity: 40%;
+    }
+    50% {
+        font-size: 3.5rem;
+        opacity: 100%;
+    }
+}
+
 /* ==================== GENERAL ==================== */
 
 html {
@@ -282,7 +293,7 @@ nav ul {
         text-align: center;
         font-size: 3rem;
 
-        transition: font-size 0.75s ease, opacity 0.75s ease, color 0.75s ease;
+        animation: accroche-animation-laptop 8s infinite;
     }
 
     .accroche a {
