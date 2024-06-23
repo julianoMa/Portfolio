@@ -57,6 +57,12 @@ ul {
     font-family: 'Hacked';
 }
 
+.skill a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Firacode';
+}
+
 /* ==================== MOBILE ==================== */
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -66,14 +72,15 @@ ul {
 
     .retour-index {
         margin-top: 1rem;
+
+        text-align: center;
     }
     
     .retour-index a {
         font-family: 'Raleway';
         color: white;
         text-decoration: none;
-        justify-content: center;
-    
+
         padding: 0.3rem;
     
         border-radius: 2px;
@@ -110,16 +117,112 @@ ul {
     }
 
     .skill img {
-        width: 50%;
+        width: 150px;
         height: auto;
     }
 
     .skill a {
-        color: white;
-        text-decoration: underline;
-        font-family: 'Firacode';
         font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
 
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .retour-index {
+        margin-top: 1rem;
+
+        text-align: center;
+    }
+    
+    .retour-index a {
+        font-family: 'Raleway';
+        color: white;
+        text-decoration: none;
+
+        padding: 0.3rem;
+    
+        border-radius: 2px;
+        border: 1px solid white;
+    }
+    
+    .retour-index a:hover {
+        background-color: white;
+        color: black;
+    
+        transition: 0.75s;
+    }
+
+    .title {
+        font-size: 1.5rem;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .skill img {
+        width: 150px;
+        height: auto;
+    }
+
+    .skill a {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .retour-index {
+        display: none;
+    }
+
+    .title {
+        font-size: 1.5rem;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .skill img {
+        width: 150px;
+        height: auto;
+    }
+
+    .skill a {
+        font-size: 1rem;
         margin-top: 0.5rem;
     }
 }
