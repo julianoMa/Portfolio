@@ -1,0 +1,125 @@
+/* ==================== FONTS ==================== */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hacked';
+    src: url('../fonts/Hacked-KerX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Firacode';
+    src: url('../fonts/FiraCodeNerdFontPropo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==================== GENERAL ==================== */
+
+html {
+    background-image: url(../img/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+li {
+    padding: 2rem;
+}
+
+li a {
+    font-family: 'Raleway';
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Hacked';
+}
+
+/* ==================== MOBILE ==================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    .retour-index {
+        margin-top: 1rem;
+    }
+    
+    .retour-index a {
+        font-family: 'Raleway';
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+    
+        padding: 0.3rem;
+    
+        border-radius: 2px;
+        border: 1px solid white;
+    }
+    
+    .retour-index a:hover {
+        background-color: white;
+        color: black;
+    
+        transition: 0.75s;
+    }
+
+    .title {
+        font-size: 1.5rem;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .skill img {
+        width: 50%;
+        height: auto;
+    }
+
+    .skill a {
+        color: white;
+        text-decoration: underline;
+        font-family: 'Firacode';
+        font-size: 1rem;
+
+        margin-top: 0.5rem;
+    }
+}
