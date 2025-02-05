@@ -19,11 +19,11 @@ const submitForm = () => {
           <strong>juliano.martins81000@gmail.com</strong>
         </p>
 
-        <label for="message">Votre message :</label>
-        <textarea id="message" v-model="message" rows="5" cols="50"></textarea>
+        <label for="message" style="display: none">Votre message :</label>
+        <textarea style="display: none" id="message" v-model="message" rows="5" cols="50"></textarea>
 
         <br />
-        <button type="submit">Envoyer</button>
+        <button type="submit" style="display: none">Envoyer</button>
       </form>
     </section>
   </div>
